@@ -1,0 +1,29 @@
+{
+    "python.pythonPath": "${workspaceFolder}/venv/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "flake8",
+    "python.formatting.provider": "black",
+    "python.autoComplete.addBrackets": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "git.autofetch": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "django-rest-framework.url.browsableAPIRoot": "/api/",
+    "django-rest-framework.url.convertRelative": true,
+    "django-rest-framework.url.convertParams": true,
+    "django-rest-framework.url.runserver": "python manage.py runserver",
+    "django-rest-framework.url.pythonPath": "${workspaceFolder}",
+    "django-rest-framework.url.pythonExecutable": "python",
+    "django-rest-framework.url.useWorker": false
+}

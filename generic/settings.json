@@ -1,0 +1,204 @@
+{
+    // VIM Settings
+    "vim.useSystemClipboard": true,
+    "editor.formatOnSave": true,
+    // Vim emulator is great(!)
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+
+
+
+    // Linters
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "djlint.enableLinting": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=79",
+        "--ignore=E501"
+    ],
+
+
+
+    // Formatters
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "python.formatting.provider": "black",
+    "autopep8.args": ["--ignore=E731"],
+
+
+
+    // Wrapping
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "editor.wordWrapColumn": 80,
+    "rewrap.wrappingColumn": 80,
+    "rewrap.autoWrap.enabled": true,
+
+
+
+    // Visuals
+    "search.showLineNumbers": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.colorTheme": "Monokai",
+    "window.zoomLevel": 1,
+    "editor.lineNumbers": "on",
+    "editor.glyphMargin": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+
+
+
+    // Tabs
+    "editor.tabSize": 4,
+
+
+
+    // Tags
+    "auto-close-tag.enableAutoCloseTag": true,
+
+
+
+    // IntelliSense
+    "editor.hover.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.linkedEditing": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+    },
+
+
+
+    // Debugging
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.confirmOnExit": "always",
+    "debug.console.closeOnEnd": true,
+
+
+
+    // Saving
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "explorer.confirmDelete": false,
+
+
+
+    // Start up
+    "workbench.startupEditor": "newUntitledFile",
+
+
+
+    // Language Specific Settings
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+
+    "[django-html]": {
+        "editor.defaultFormatter": "monosans.djlint",
+        "editor.foldingStrategy": "indentation"
+    },
+    
+
+
+    // Coderunner settings
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName"
+    },
+
+
+    // Github Copilot Settings
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false
+    },
+
+
+    // Integrated terminal will open CMD if Windows
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": "C:\\Windows\\System32\\cmd.exe"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+
+
+    // Keep fetching git repo
+    "git.autofetch": true,
+    "workbench.editorAssociations": {
+        "*.sqlite3": "default"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+}
